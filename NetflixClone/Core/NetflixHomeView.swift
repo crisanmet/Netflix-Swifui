@@ -12,7 +12,7 @@ struct NetflixHomeView: View {
     @State private var selectedFilter: FilterModel?
     @State private var fullHeaderSize: CGSize = .zero
     @State private var scrollOffset: CGFloat = 0
-
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color.netflixBlack.ignoresSafeArea()
@@ -22,8 +22,39 @@ struct NetflixHomeView: View {
                     Rectangle()
                         .opacity(0)
                         .frame(height: fullHeaderSize.height)
+                    
                     NetflixHeroView()
                         .padding()
+                    
+                    ScrollView(.horizontal) {
+                    
+                        VStack(alignment: .leading) {
+                            Text("Movies")
+                                .font(.headline)
+                            HStack {
+                                ForEach(0..<20) { index in
+                                    NetflixMovieView(isRecentlyAdded: index % 2 == 0)
+                                }
+                            }
+                        }
+                        .padding()
+                    
+                    }
+                    
+                    ScrollView(.horizontal) {
+                        
+                        VStack(alignment: .leading) {
+                            Text("Las 10 series mas vistas")
+                                .font(.headline)
+                            HStack {
+                                ForEach(0..<10) { index in
+                                    NetflixMovieView(isRecentlyAdded: index % 2 == 0, topTenRanking: index + 1)
+                                }
+                            }
+                        }
+                        .padding()
+                        
+                    }
                 }
                 .readingFrame { frame in
                     withAnimation {

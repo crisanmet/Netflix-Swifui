@@ -20,6 +20,7 @@
 		40BE7DB52C62DB6600F03F51 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 40BE7DB42C62DB6600F03F51 /* Kingfisher */; };
 		40BE7E802C63FE6900F03F51 /* FrameReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE7E7F2C63FE6900F03F51 /* FrameReader.swift */; };
 		40BE7E822C63FEAC00F03F51 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE7E812C63FEAC00F03F51 /* VisualEffectBlur.swift */; };
+		40BE7E842C6402E800F03F51 /* NetflixMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE7E832C6402E800F03F51 /* NetflixMovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		409CBCDA2C50A1A500F809F9 /* NetflixHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHeroView.swift; sourceTree = "<group>"; };
 		40BE7E7F2C63FE6900F03F51 /* FrameReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameReader.swift; sourceTree = "<group>"; };
 		40BE7E812C63FEAC00F03F51 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		40BE7E832C6402E800F03F51 /* NetflixMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				409CBCD62C50651C00F809F9 /* NetflixFilterView.swift */,
 				409CBCD82C50670A00F809F9 /* NetflixFilterBarView.swift */,
 				409CBCDA2C50A1A500F809F9 /* NetflixHeroView.swift */,
+				40BE7E832C6402E800F03F51 /* NetflixMovieView.swift */,
 				40BE7E7F2C63FE6900F03F51 /* FrameReader.swift */,
 				40BE7E812C63FEAC00F03F51 /* VisualEffectBlur.swift */,
 			);
@@ -310,6 +313,7 @@
 				409CBCD72C50651C00F809F9 /* NetflixFilterView.swift in Sources */,
 				409CBCDB2C50A1A500F809F9 /* NetflixHeroView.swift in Sources */,
 				409CBCA92C50621500F809F9 /* NetflixCloneApp.swift in Sources */,
+				40BE7E842C6402E800F03F51 /* NetflixMovieView.swift in Sources */,
 				409CBCD52C50634300F809F9 /* NetflixHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
