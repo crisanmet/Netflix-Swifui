@@ -17,6 +17,22 @@ struct NetflixHomeView: View {
         ZStack(alignment: .top) {
             Color.netflixBlack.ignoresSafeArea()
             
+            ZStack {
+
+                LinearGradient(
+                    colors: [
+                        .netflixDarkRed.opacity(1),
+                        .netflixDarkRed.opacity(0)
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .ignoresSafeArea()
+            }
+            .frame(maxHeight: max(10, (400 + (scrollOffset * 0.75))))
+            .opacity(scrollOffset < -250 ? 0 : 1)
+            .animation(.easeInOut, value: scrollOffset)
+            
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 8) {
                     Rectangle()
